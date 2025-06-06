@@ -125,3 +125,28 @@ python -m run
 Then open your browser and go to:  
 🌐 [http://localhost:8002](http://localhost:8002)
 
+
+```markdown
+## 🧠 How It Works
+
+1. **User Input (Free-Form Text):**
+   - You enter a natural query like:
+     _"Find me 5 green tea powders rated above 4 stars"_
+
+2. **NER Model Extraction:**
+   - The BERT-based NER model extracts:
+     - Product name: `green tea powder`
+     - Min rating: `4`
+     - Quantity: `5`
+
+3. **Playwright Scraper:**
+   - Scrapes Amazon for real product listings using headless browsing.
+
+4. **Heuristics Engine:**
+   - Filters out low-rated or irrelevant results.
+   - Optional: Ranks based on sponsored status or past month sales.
+
+5. **Result Display:**
+   - FastAPI renders the HTML with product name, rating, reviews, price, etc.
+```
+---
