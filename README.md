@@ -63,51 +63,66 @@ project_root/
   Returns filtered product listings via FastAPI `POST`, rendering them on a results HTML page.
 
 ---
-## 🛠️ Installation Rules for Amazon Product Intent Extractor
+🛠️ Installation Instructions for Amazon Product Intent Extractor
 
 Follow these steps to set up the project on your local machine:
 
-1. Clone the Repository
+---
 
-
+🔹 **Clone the Repository**
+```bash
 git clone https://github.com/kawsshikh/Amazon_Project_suggestions.git
 cd Amazon_Project_suggestions
+```
 
-2. Set Up a Virtual Environment
+---
 
+🔹 **Set Up a Virtual Environment**
 
-Create and activate a virtual environment:
+- **On Windows:**
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
 
-- On Windows:
-  python -m venv .venv
-  .venv\Scripts\activate
+- **On macOS/Linux:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
-- On macOS/Linux:
-  python3 -m venv .venv
-  source .venv/bin/activate
+---
 
-3. Install Required Packages
-
-
+🔹 **Install Required Packages**
+```bash
 pip install -r requirements.txt
+```
 
-4. Install Playwright and Its Dependencies
+---
 
-
+🔹 **Install Playwright and Its Dependencies**
+```bash
 python -m playwright install
+```
 
-(This installs the necessary browser binaries for scraping.)
+> This installs the necessary browser binaries for scraping.
 
-5. (Optional) Train the BERT NER Model
+---
 
-
+🔹 **(Optional) Train the BERT NER Model**
+```bash
 python -m first_run
+```
 
-(Skip if you already have a trained model saved in `./ner-model`.)
+> Skip if you already have a trained model saved in `./ner-model`.
 
-6. Run the FastAPI Application
+---
 
-
+🔹 **Run the FastAPI Application**
+```bash
 python -m run
+```
 
-Then open your browser and go to: http://localhost:8002
+Then open your browser and go to:  
+🌐 [http://localhost:8002](http://localhost:8002)
+
