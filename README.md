@@ -25,7 +25,7 @@ This project leverages a **fine-tuned BERT NER model** and a **FastAPI** backend
 ---
 
 ## 📁 Project Structure
-
+```text
 project_root/
 ├── app/
 │ ├── models/ # Configs and ID mappings
@@ -54,7 +54,7 @@ project_root/
 ├── README.md # Project documentation
 ├── run.py # FastAPI Uvicorn runner
 └── first_run.py # One-time model trainer
-
+```
 ---
 
 
