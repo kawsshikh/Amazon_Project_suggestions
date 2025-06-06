@@ -129,22 +129,22 @@ Then open your browser and go to:
 ```markdown
 ## 🧠 How It Works
 
-1. **User Input (Free-Form Text):**
+1. User Input (Free-Form Text):
    - You enter a natural query like:
-     _"Find me 5 green tea powders rated above 4 stars"_
+     _"Find me 5 green tea powders rated above 4 stars and not sponsored"_
 
 2. **NER Model Extraction:**
    - The BERT-based NER model extracts:
-     - Product name: `green tea powder`
-     - Min rating: `4`
-     - Quantity: `5`
+     - query: `green tea powder`
+     - stars: `4`
+     - limit: `5`
+     - sponsored: False    
 
 3. **Playwright Scraper:**
    - Scrapes Amazon for real product listings using headless browsing.
 
 4. **Heuristics Engine:**
-   - Filters out low-rated or irrelevant results.
-   - Optional: Ranks based on sponsored status or past month sales.
+   - filters and sorts the data according to the user's preference
 
 5. **Result Display:**
    - FastAPI renders the HTML with product name, rating, reviews, price, etc.
