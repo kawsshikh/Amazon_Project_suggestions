@@ -126,6 +126,15 @@ Then open your browser and go to:
 🌐 [http://localhost:8002](http://localhost:8002)
 
 ---
+### 📡 API Endpoints
+
+| Method | Endpoint       | Description                    |
+|--------|----------------|--------------------------------|
+| GET    | `/`            | Renders the input query form   |
+| POST   | `/result`      | Accepts query input, returns filtered product cards |
+
+---
+
 ## 🧠 How It Works
 ```markdown
 
@@ -177,3 +186,22 @@ Then open your browser and go to:
 ![Demo](demo.gif)
 
 ---
+### ⚠️ Note on Web Scraping
+
+- This tool is for **educational purposes**.
+- Web scraping Amazon may trigger anti-bot mechanisms.
+- Use headless = `False` if Amazon blocks headless mode.
+
+---
+### 🧰 Tech Stack
+
+- 🐍 Python 3.10+
+- 🤖 Transformers (`BERT`, HuggingFace)
+- 🌐 FastAPI
+- 🎭 Playwright
+- 📊 Pandas, LXML
+- 🧪 Uvicorn (for local dev server)
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
