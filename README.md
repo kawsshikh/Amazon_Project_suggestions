@@ -68,12 +68,14 @@ project_root/
 Follow these steps to set up the project on your local machine:
 
 1. Clone the Repository
------------------------
+
+
 git clone https://github.com/kawsshikh/Amazon_Project_suggestions.git
 cd Amazon_Project_suggestions
 
 2. Set Up a Virtual Environment
--------------------------------
+
+
 Create and activate a virtual environment:
 
 - On Windows:
@@ -85,23 +87,27 @@ Create and activate a virtual environment:
   source .venv/bin/activate
 
 3. Install Required Packages
-----------------------------
+
+
 pip install -r requirements.txt
 
 4. Install Playwright and Its Dependencies
-------------------------------------------
+
+
 python -m playwright install
 
 (This installs the necessary browser binaries for scraping.)
 
 5. (Optional) Train the BERT NER Model
---------------------------------------
+
+
 python -m first_run
 
 (Skip if you already have a trained model saved in `./ner-model`.)
 
 6. Run the FastAPI Application
-------------------------------
+
+
 python -m run
 
 Then open your browser and go to: http://localhost:8002
