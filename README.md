@@ -125,9 +125,10 @@ python -m run
 Then open your browser and go to:  
 🌐 [http://localhost:8002](http://localhost:8002)
 
-
-```markdown
+---
 ## 🧠 How It Works
+```markdown
+
 
 1. User Input (Free-Form Text):
    - You enter a natural query like:
