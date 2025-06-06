@@ -26,40 +26,34 @@ This project leverages a **fine-tuned BERT NER model** and a **FastAPI** backend
 
 ## 📁 Project Structure
 
-  project_root/
-│
+project_root/
 ├── app/
-│   ├── models/                      # Configs and ID mappings
-│   │   └── config.py
-│   │
-│   ├── nlp/                         # Core logic for training and tagging
-│   │   ├── train_model.py           # Main training script
-│   │   ├── train_data_gen.py        # Training data generation
-│   │   ├── tagging_utils.py         # Tag-to-label helpers
-│   │   └── model_trainer_config.py  # Training args/config
-│   │
-│   ├── services/                    # JSON generation, scraping, reinforcement
-│   │   ├── JSON_query_gen.py
-│   │   ├── reinforce.py
-│   │   ├── table_format.py
-│   │   └── web_scrape.py
-│   │
-│   ├── utils/                       # UI generation and HTML helpers
-│   │   └── html_text.py
-│   │
-│   └── main.py                      # FastAPI app entry point
+│ ├── models/ # Configs and ID mappings
+│ │ └── config.py
+│ ├── nlp/ # Core logic for training and tagging
+│ │ ├── train_model.py # Main training script
+│ │ ├── train_data_gen.py # Training data generation
+│ │ ├── tagging_utils.py # Tag-to-label helpers
+│ │ └── model_trainer_config.py # Training args/config
+│ ├── services/ # JSON generation, scraping, reinforcement
+│ │ ├── JSON_query_gen.py
+│ │ ├── reinforce.py
+│ │ ├── table_format.py
+│ │ └── web_scrape.py
+│ ├── utils/ # UI generation and HTML helpers
+│ │ └── html_text.py
+│ └── main.py # FastAPI app entry point
 │
-├── data/                           # External or generated data files
-│   ├── data.json
-│   └── questions.csv
+├── data/ # External/generated data files
+│ ├── data.json
+│ └── questions.csv
 │
-├── ner-model/                      # Saved BERT model (generated)
-│
-├── result.json                     # Final scraped product results
-├── requirements.txt                # Python dependencies
-├── README.md                       # Project overview
-├── run.py                          # FastAPI server launcher
-└── first_run.py                    # One-time model training launcher
+├── ner-model/ # Saved BERT model (generated)
+├── result.json # Final scraped product results
+├── requirements.txt # Python dependencies
+├── README.md # Project overview
+├── run.py # FastAPI server launcher
+└── first_run.py # One-time model training launcher
 
 
 - 📤 **FastAPI Response with Results**  
