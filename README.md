@@ -153,18 +153,23 @@ Then open your browser and go to:
 ---
 ## 📽 Demo
 🔹 **Query obtained as Input from FastAPI GET**
-  - list non sponsored seven Harry Potter lego sets with at least 4.5 star rating
+  - list non sponsored seven Harry Potter lego sets with at least 4.5 star rating.
+
 🔹 **ETL - NER**
  - detects "Harry Potter lego set" as query
  - detects seven as number of suggestions -> converts str to int
  - rating as 4.5
  - sponsor is flagged false
  - constructs a JSON
+
+
 🔹 **Web Scraping using Plawright**
 - Gathers the query
 - transforms into a search URL
 - transforms the HTML content to DataFrame
 - apply filter and sort
+
+
  🔹 **Output sent through FastAPI POST**
 - Gathered output is passed to users via FastAPI Post
 
