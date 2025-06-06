@@ -151,3 +151,6 @@ Then open your browser and go to:
    - FastAPI renders the HTML with product name, rating, reviews, price, etc.
 ```
 ---
+## 📽 Demo
+
+![Demo](demo.gif)
