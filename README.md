@@ -31,10 +31,10 @@ project_root/
 │ ├── models/ # Configs and ID mappings
 │ │ └── config.py
 │ ├── nlp/ # Core logic for training and tagging
-│ │ ├── train_model.py # Main training script
-│ │ ├── train_data_gen.py # Training data generation
-│ │ ├── tagging_utils.py # Tag-to-label helpers
-│ │ └── model_trainer_config.py # Training args/config
+│ │ ├── train_model.py
+│ │ ├── train_data_gen.py
+│ │ ├── tagging_utils.py
+│ │ └── model_trainer_config.py
 │ ├── services/ # JSON generation, scraping, reinforcement
 │ │ ├── JSON_query_gen.py
 │ │ ├── reinforce.py
@@ -44,16 +44,19 @@ project_root/
 │ │ └── html_text.py
 │ └── main.py # FastAPI app entry point
 │
-├── data/ # External/generated data files
+├── data/ # Input datasets
 │ ├── data.json
 │ └── questions.csv
 │
-├── ner-model/ # Saved BERT model (generated)
-├── result.json # Final scraped product results
-├── requirements.txt # Python dependencies
-├── README.md # Project overview
-├── run.py # FastAPI server launcher
-└── first_run.py # One-time model training launcher
+├── ner-model/ # Trained BERT model directory
+├── result.json # Final product listing results
+├── requirements.txt # Project dependencies
+├── README.md # Project documentation
+├── run.py # FastAPI Uvicorn runner
+└── first_run.py # One-time model trainer
+
+---
+
 
 
 - 📤 **FastAPI Response with Results**  
