@@ -1,13 +1,29 @@
-* Amazon Product Suggestion System using BERT-based Named Entity Recognition and FastAPI
+# 🛍️ Amazon Product Intent Extractor
 
-This project uses a fine-tuned BERT NER model and a FastAPI interface to:
+This project leverages a **fine-tuned BERT NER model** and a **FastAPI** backend to create an intelligent product query system. It converts free-form user input into structured queries, scrapes Amazon using **Playwright**, and returns ranked product suggestions in an interactive HTML interface.
 
-- 📝 Collect free-form product queries through an interactive HTML form (via FastAPI GET method).
+---
 
-- 🔍 Extract structured product intent — including product name, minimum rating, number of suggestions, and sponsorship preference — from natural language input using the NER model.
+## 🚀 Features
 
-- 🛒 Scrape Amazon listings using Playwright based on the extracted intent.
+- 📝 **Natural Language Input Form**  
+  Interactive HTML form using FastAPI (`GET`) to collect user queries like:  
+  _"Show me 5 noise-canceling headphones rated above 4.3 that are not sponsored."_
 
-- 🧠 Rank and filter results using custom heuristics to highlight relevant products.
+- 🤖 **Named Entity Recognition (NER)**  
+  Extracts structured product intent from the query using a fine-tuned **BERT model**, including:
+  - Product name  
+  - Minimum rating  
+  - Number of results requested  
+  - Sponsorship preference
 
-- 📤 Display results via FastAPI POST method, returning curated product recommendations.
+- 🌐 **Amazon Scraping with Playwright**  
+  Automates browsing and extracts live product listings from Amazon.
+
+- 🧠 **Smart Ranking & Filtering**  
+  Uses heuristics to sort and prioritize relevant products (e.g., rating, sponsored status, reviews).
+
+- 📤 **FastAPI Response with Results**  
+  Returns filtered product listings via FastAPI `POST`, rendering them on a results HTML page.
+
+---
